@@ -30,7 +30,7 @@ try:
     m = gmpy.root(a,e)[0]
     Convert(m)
 except ValueError:
-    slowprint("\n[-] c1,c2,c3,n1,n2,n3 Must Be Integar Number")
+    slowprint("\n[-] c1,c2,c3,n1,n2,n3 Must be integar number")
 except AssertionError:
     slowprint("\n[-] Wrong Data")
 except KeyboardInterrupt:
