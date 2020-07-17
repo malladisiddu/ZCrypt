@@ -10,7 +10,7 @@ try:
     decrypt = pow(c,d,n)
     Convert(decrypt)
 except ValueError:
-    slowprint("\n[-] c,n,d Must be Integer Number")
+    slowprint("\n[-] c,n,d Must be integer number")
 except AssertionError:
     slowprint("\n[-] Wrong Data")
 except KeyboardInterrupt:
