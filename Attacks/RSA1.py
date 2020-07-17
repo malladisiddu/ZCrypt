@@ -24,17 +24,17 @@ try:
     Convert(decrypt)
     
 except IndexError:
-    slowprint("[-] Sorry Can't Factorize n ")
-    slowprint("\n[!] Try To Use MultiPrime Attack ")
+    slowprint("[-] Sorry can't factorize n ")
+    slowprint("\n[!] Try to use Multi-Prime Attack ")
 except ImportError:
-    slowprint("\n[-] Module Not Setup")
+    slowprint("\n[-] Module not setup")
 except ValueError:
-    slowprint("\n[-] c, e, n Must Be Integar Number")
+    slowprint("\n[-] c, e, n Must be integer number")
 except AssertionError:
-    slowprint("\n[-] Wrong Data")
+    slowprint("\n[-] Wrong data")
 except KeyboardInterrupt:
     exit()
 except requests.exceptions.ConnectionError:
-    slowprint("\n[-] Check Your Internet")
+    slowprint("\n[-] Check your internet")
 except:
     slowprint("False Attack")
