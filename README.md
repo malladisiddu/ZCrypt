@@ -1,6 +1,5 @@
 # ZCrypt
 ## Basic decryption tool
----------------
 
 ### Installation
 ```
