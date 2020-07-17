@@ -12,9 +12,9 @@ try:
     assert pow(m,e) == c
     Convert(m)
 except ImportError:
-    slowprint("\n[-] Module Not Setup")
+    slowprint("\n[-] Module not setup")
 except ValueError:
-    slowprint("\n[-] c Must Be Integer Number")
+    slowprint("\n[-] c Must be integer number")
 except AssertionError:
     slowprint("\n[-] Wrong Data")
 except KeyboardInterrupt:
