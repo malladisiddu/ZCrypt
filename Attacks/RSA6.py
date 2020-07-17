@@ -24,11 +24,11 @@ try:
     Convert(m)
     
 except IndexError:
-    slowprint("[-] Sorry Can't Factorize n ")
+    slowprint("[-] Sorry can't factorize n ")
 except ImportError:
-    slowprint("\n[-] Module Not Setup")
+    slowprint("\n[-] Module not setup")
 except ValueError:
-    slowprint("\n[-] c,n,e Must Be Integer Number")
+    slowprint("\n[-] c,n,e Must be integer number")
 except KeyboardInterrupt:
     exit()
 except:
