@@ -17,7 +17,7 @@ try:
 except ImportError:
     slowprint("\n[-] Module not setup ")
 except ValueError:
-    slowprint("\n[-] p,q,e,c Must be Integer Number")
+    slowprint("\n[-] p,q,e,c Must be integer number")
 except AssertionError:
     slowprint("\n[-] Wrong Data")
 except KeyboardInterrupt:
