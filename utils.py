@@ -5,8 +5,7 @@ def Convert(decimal):
     hex_ = hex(decimal).replace("0x","").replace("L","")
     ascii = binascii.a2b_hex(hex_)
     print("\nPlainText in Decimal :",decimal)
-    print("PlainText in hex :",hex_)
-    print("PlainText in ascii :",ascii.decode("utf-8"))
+    print("PlainText:",ascii.decode("utf-8"))
 
 def egcd(b, n):
     (x0, x1, y0, y1) = (1, 0, 0, 1)
