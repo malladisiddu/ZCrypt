@@ -15,7 +15,6 @@ try:
     n = int(input("==> n = "))
     
     factordb = factordb(n)
-    print(factordb)
     q = factordb[0]
     p = factordb[1]
     phi = (p-1)*(q-1)
