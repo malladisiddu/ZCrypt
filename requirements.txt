@@ -5,3 +5,4 @@ gmpy
 SymPy
 requests
 future
+pwntools
