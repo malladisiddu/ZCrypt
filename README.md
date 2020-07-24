@@ -2,7 +2,23 @@
 ## Basic decryption tool
 
 ### Author's Note
-ZCrypt is a basic decryption tool for all ctf enthusiasts especially for Crypto-analysts which covers XOR and RSA techniques. Many updates are going to release in future.
+ZCrypt is a basic decryption tool for all ctf enthusiasts especially for Crypto-analysts which covers XOR and RSA techniques. 
+### Features
+  #### RSA Attacks
+  * (c,n,e)
+  * (c,)
+  * (c,n,e)
+  * (c,p,q,e)
+  * (c,n,e,{p or q})
+  * (c,n,d)
+  * (c1,c2,c3,n1,n2,n3,e) [Hasted Broadcast Attack]
+  * (c,e)                 [Small Exponent("e") Attack]
+  
+  #### XOR
+  * Single Byte XOR
+  * Repeating Key XOR
+
+Many updates are going to release in future.
 
 ### Installation
 ```
