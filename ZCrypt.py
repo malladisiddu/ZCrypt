@@ -30,7 +30,7 @@ elif check == 1:
 [3] - (c,n,e,{p or q})
 [4] - (c,n,d)
 [5] - (c1,c2,c3,n1,n2,n3,e) [Hasted Broadvast Attack]
-[6] - (c,e)                 [Small Modulus Attack]
+[6] - (c,e)                 [Small Exponent("e") Attack]
 [0] - Exit
 	""")
     z = int(input("==> "))
