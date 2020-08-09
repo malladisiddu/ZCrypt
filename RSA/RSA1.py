@@ -24,7 +24,6 @@ try:
     
 except IndexError:
     slowprint("[-] Sorry Can't Factorize n ")
-    slowprint("\n[!] Try To Use MultiPrime Attack ")
 except ImportError:
     slowprint("\n[-] Module Not Setup")
 except ValueError:
