@@ -11,10 +11,10 @@ def slowprint(s):
 clear = ""
 if "Linux" in platform.system():
     clear = "clear"
-os.system(clear)
 
 
 def banner():
+    os.system('tput reset')
     print("""
 <--------------->
   <------------>
@@ -28,4 +28,4 @@ def banner():
       //
      <------------>
     <--------------->
-<<ZCrypt>> <<st0ic3r>>""")
+<<ZCrypt:Basic Decryption Tool>> <<st0ic3r>>""")
