@@ -1,38 +1,35 @@
 from banner import *
-from utils import *
+from utils import egcd,modinv,Convert
 from factorizations.factordb import *
 banner()
 
 try:
-
     def factordb(n):
     	f = FactorDB(n)
     	f.connect()
     	return f.get_factor_list()
-    
+    	
     c = int(input("==> c = "))
     n = int(input("==> n = "))
     e = int(input("==> e = "))
     
-    factordb = factordb(n)
-    q = factordb[0]
-    p = factordb[1]
-    phi = (p-1)*(q-1)
+    primes = factordb(n)
+    print(primes)
+    phi = 1
+    for i in primes:
+    	phi *= i-1  
+    print(phi)	
     d = modinv(e,phi)
-    decrypt = pow(c,d,n)
-    Convert(decrypt)
+    m = pow(c,d,n)
+    Convert(m)
     
 except IndexError:
     slowprint("[-] Sorry Can't Factorize n ")
 except ImportError:
     slowprint("\n[-] Module Not Setup")
 except ValueError:
-    slowprint("\n[-] c, e, n Must Be Integar Number")
-except AssertionError:
-    slowprint("\n[-] Wrong Data")
+    slowprint("\n[-] c,n,e Must Be Integer Number")
 except KeyboardInterrupt:
     exit()
-except requests.exceptions.ConnectionError:
-    slowprint("\n[-] Check Your Internet")
 except:
-    slowprint("False Attack")
+    slowprint("[-] False Attack !")

@@ -4,10 +4,10 @@ banner()
 
 try:
     
+    c = int(input("==> c = "))
     p = int(input("==> p = "))
     q = int(input("==> q = "))
     e = int(input("==> e = "))
-    c = int(input("==> c = "))
     n = p*q
     phi = (p-1)*(q-1)
     d = modinv(e,phi)

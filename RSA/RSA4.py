@@ -3,9 +3,9 @@ from utils import Convert
 banner()
 
 try:
+    c = int(input("==> c = "))
     n = int(input("==> n = "))
     d = int(input("==> d = "))
-    c = int(input("==> c = "))
     
     decrypt = pow(c,d,n)
     Convert(decrypt)

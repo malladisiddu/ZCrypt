@@ -1,24 +1,24 @@
 from banner import *
-from utils import Convert
-import gmpy2
-import binascii
+from utilis import modinv,Convert
 banner()
-
 try:
     c = int(input("==> c = "))
-    print("Probably 'e' will be small")
-    e = int(input("==> e = "))
-    m = gmpy2.iroot(c,e)[0]
-    assert pow(m,e) == c
-    Convert(m)
-except ImportError:
-    slowprint("\n[-] Module Not Setup")
+    p = int(input("==> p = "))
+    q = int(input("==> q = "))
+    dp = int(input("==> dp = "))
+    dq = int(input("==> dq = "))
+
+    slowprint("\n[+] Please Wait ...\n")
+    def chinese_remainder_theorem(p,q,dp,dq,chipher_text):
+        q_inv = modinv(p , q)
+        m1 = pow(chipher_text,dp,p)
+        m2 = pow(chipher_text,dq,q)
+        h = (q_inv*(m1-m2)) % p
+        return m2 + h * q
+    Convert(chinese_remainder_theorem(p,q,dp,dq,c))
 except ValueError:
-    slowprint("\n[-] c Must Be Integer Number")
+    slowprint("\n[-] c,p,q,dp,dq Must Be Integar Number")
 except AssertionError:
     slowprint("\n[-] Wrong Data")
 except KeyboardInterrupt:
     exit()
-except:
-    slowprint("\n[-] False Attack !")
-    

@@ -29,12 +29,13 @@ elif check == 1:
 [2] - (c,p,q,e)
 [3] - (c,n,e,{p or q})
 [4] - (c,n,d)
-[5] - (c1,c2,c3,n1,n2,n3,e) [Hasted Broadcast Attack]
+[5] - (c1,c2,c3,n1,n2,n3) [Hasted Broadcast Attack]
 [6] - (c,e)                 [Small Exponent("e") Attack]
+[7] - (c,p,q,dp,dq)         [Chinese Remainder Theorem]
 [0] - Exit
 	""")
     z = int(input("==> "))
-    if int(z) <= 6:
+    if int(z) <= 7:
         os.system('tput reset')
         exec('import RSA.RSA'+str(z))
     else:
