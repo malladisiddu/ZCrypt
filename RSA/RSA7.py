@@ -1,5 +1,5 @@
 from banner import *
-from utilis import modinv,Convert
+from utils import modinv,Convert
 banner()
 try:
     c = int(input("==> c = "))
