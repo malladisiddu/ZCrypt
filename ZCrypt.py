@@ -35,10 +35,11 @@ elif check == 1:
 [0] - Exit
 	""")
     z = int(input("==> "))
-    if int(z) <= 7:
+    if int(z) >= 1 and int(z) <= 7:
         os.system('tput reset')
         exec('import RSA.RSA'+str(z))
     else:
         exit()
 else:
      exit()
+
