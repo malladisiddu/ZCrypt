@@ -1,27 +1,26 @@
 from banner import *
 from utils import *
-from factorizations.factordb import *
 banner()
-
 try:
-
-    def factordb(n):
-    	f = FactorDB(n)
-    	f.connect()
-    	return f.get_factor_list()
     
+    def fermat_factors(n):
+        assert n % 2 != 0
+    a = gmpy2.isqrt(n)
+    b2 = gmpy2.square(a) - n
+    while not gmpy2.is_square(b2):
+        a += 1
+        b2 = gmpy2.square(a) - n
+    return a + gmpy2.isqrt(b2), a - gmpy2.isqrt(b2)
+
     c = int(input("==> c = "))
     n = int(input("==> n = "))
     e = int(input("==> e = "))
     
-    factordb = factordb(n)
-    q = factordb[0]
-    p = factordb[1]
+    p, q = fermat_factors(n)
     phi = (p-1)*(q-1)
     d = modinv(e,phi)
     decrypt = pow(c,d,n)
     convert(decrypt)
-    
 except IndexError:
     slowprint("[-] Sorry Can't Factorize n ")
 except ImportError:

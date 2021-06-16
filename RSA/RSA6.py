@@ -10,7 +10,7 @@ try:
     e = int(input("==> e = "))
     m = gmpy2.iroot(c,e)[0]
     assert pow(m,e) == c
-    Convert(m)
+    convert(m)
 except ImportError:
     slowprint("\n[-] Module Not Setup")
 except ValueError:

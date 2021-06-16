@@ -15,7 +15,7 @@ try:
         m2 = pow(chipher_text,dq,q)
         h = (q_inv*(m1-m2)) % p
         return m2 + h * q
-    Convert(chinese_remainder_theorem(p,q,dp,dq,c))
+    convert(chinese_remainder_theorem(p,q,dp,dq,c))
 except ValueError:
     slowprint("\n[-] c,p,q,dp,dq Must Be Integar Number")
 except AssertionError:

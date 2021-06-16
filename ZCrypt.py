@@ -29,9 +29,10 @@ elif check == 1:
 [2] - (c,p,q,e)
 [3] - (c,n,e,{p or q})
 [4] - (c,n,d)
-[5] - (c1,c2,c3,n1,n2,n3) [Hasted Broadcast Attack]
+[5] - (c1,c2,c3,n1,n2,n3)   [Hasted Broadcast Attack]
 [6] - (c,e)                 [Small Exponent("e") Attack]
 [7] - (c,p,q,dp,dq)         [Chinese Remainder Theorem]
+[8] - (c,n,e)               [Fermat Factorization]
 [0] - Exit
 	""")
     z = int(input("==> "))

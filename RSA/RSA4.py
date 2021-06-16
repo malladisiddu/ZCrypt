@@ -8,7 +8,7 @@ try:
     d = int(input("==> d = "))
     
     decrypt = pow(c,d,n)
-    Convert(decrypt)
+    convert(decrypt)
 except ValueError:
     slowprint("\n[-] c,n,d Must be Integer Number")
 except AssertionError:

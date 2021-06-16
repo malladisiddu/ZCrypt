@@ -12,7 +12,7 @@ try:
     phi = (p-1)*(q-1)
     d = modinv(e,phi)
     decrypt = pow(c,d,n)
-    Convert(decrypt)
+    convert(decrypt)
     
 except ImportError:
     slowprint("\n[-] Module not setup ")

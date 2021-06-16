@@ -11,7 +11,7 @@ try:
     phi = (p-1)*(q-1)
     d = modinv(e,phi)
     decrypt = pow(c,d,n)
-    Convert(decrypt)
+    convert(decrypt)
 except AssertionError:
     slowprint("\n[-] Wrong Data")
 except KeyboardInterrupt:

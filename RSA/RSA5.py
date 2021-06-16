@@ -28,7 +28,7 @@ try:
     for n,c in zip(N, C):
     	assert a % n == c
     m = gmpy.root(a,e)[0]
-    Convert(m)
+    convert(m)
 except ValueError:
     slowprint("\n[-] c1,c2,c3,n1,n2,n3 Must Be Integar Number")
 except AssertionError:

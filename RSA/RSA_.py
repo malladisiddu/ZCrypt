@@ -21,7 +21,7 @@ try:
     print(phi)	
     d = modinv(e,phi)
     m = pow(c,d,n)
-    Convert(m)
+    convert(m)
     
 except IndexError:
     slowprint("[-] Sorry Can't Factorize n ")
