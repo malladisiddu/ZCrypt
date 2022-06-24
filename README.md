@@ -13,6 +13,8 @@ ZCrypt is a basic decryption tool for all CTF enthusiasts especially for Crypto-
   * (c,e)                 [Small Exponent("e") Attack]
   * (c,p,q,dp,dq)         [Chinese Remainder Theorem]
   * (c,n,e)               [Fermat Factorization]
+  * (c1,c2,n1,n2,e)       [Common Factor Attack]
+  * (c1,c2,e1,e2,n)       [Common Modulus Attack]
   
   #### XOR
   * Single Byte XOR
