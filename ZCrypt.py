@@ -33,10 +33,12 @@ elif check == 1:
 [6] - (c,e)                 [Small Exponent("e") Attack]
 [7] - (c,p,q,dp,dq)         [Chinese Remainder Theorem]
 [8] - (c,n,e)               [Fermat Factorization]
+[9] - (c1,c2,n1,n2,e)       [Common Factor Attack]
+[10] - (c1,c2,e1,e2,n)      [Common Modulus Attack]
 [0] - Exit
 	""")
     z = int(input("==> "))
-    if int(z) >= 1 and int(z) <= 7:
+    if int(z) >= 1 and int(z) <= 10:
         os.system('tput reset')
         exec('import RSA.RSA'+str(z))
     else:
