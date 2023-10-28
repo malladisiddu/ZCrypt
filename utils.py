@@ -1,7 +1,7 @@
 import binascii
 import gmpy2
 
-def Convert(decimal):
+def convert(decimal):
     hex_ = hex(decimal).replace("0x","").replace("L","")
     ascii = binascii.a2b_hex(hex_)
     print("\nPlainText in Decimal :",decimal)

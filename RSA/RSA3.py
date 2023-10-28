@@ -1,5 +1,5 @@
 from banner import *
-from utils import egcd,modinv,Convert
+from utils import egcd,modinv,convert
 banner()
 
 try:
