@@ -9,7 +9,7 @@
 	╚══════╝ ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝
 
 	+++++++++++++++++++++++++++++++++++++++++++++++
-	************<<Created by: st0ic3r>>************
+	****<<Created by: Siddartha Malladi>>**********
 ----------------------------------------------------------------
 
 # ZCrypt
@@ -52,3 +52,4 @@ python3 ZCrypt.py
 ### Future Updates
 * Currently working on its GUI
 * Planning to add common attacks in AES for different modes
+	* Currently working on script for CBC BitFlipping Attack
