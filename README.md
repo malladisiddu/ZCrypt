@@ -1,4 +1,6 @@
 
+-----------------------------------------------------------------
+
 ███████╗ ██████╗██████╗ ██╗   ██╗██████╗ ████████╗
 ╚══███╔╝██╔════╝██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝
   ███╔╝ ██║     ██████╔╝ ╚████╔╝ ██████╔╝   ██║
@@ -45,3 +47,7 @@ pip3 install -r requirements.txt
 ```
 python3 ZCrypt.py
 ``` 
+
+### Future Updates
+* Currently working on its GUI
+* Planning to add common attacks in AES for different modes
